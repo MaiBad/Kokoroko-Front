@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{list-style: none;}
+body{
+    font-family: 'Hubballi', cursive;
+    background:linear-gradient(45deg,#333,#111);
+    font-size: 16px;
+    color: #eee;
+}
+a{
+    text-decoration: none;
+    color: #eee;
+    width: 100%;
+}
+#header{
+    background-color: #f72626;
+    text-align: center;
+    padding: 10px 0;
+}
+.header-title{
+    font-family: 'Audiowide', cursive;
+    font-size: 2rem;
+}
+#header li{display: flex;}
+#header a{padding: 10px 0;}
+#header a:hover{background-color: #d32020;}
+#banner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%,50%));
+}
+.banner-img{
+    width:100%;
+    height: 100%;
+}
+.info-img{display: none;}
+.info{
+    padding: 10px;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(imagenes/equipo.jpg);
+    background-size: cover;
+    text-align: justify;
+}
+.wsp a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #3ac43a;
+    border-top-style: solid;
+    border-color: #333;
+    transition: 0.3s background-color ease-in;
+}
+.wsp a:hover{background-color: #34b134;}
+.wsp i{font-size: 50px;}
+#footer{
+    background-color: #f72626;
+    text-align: center;
+    padding: 10px;
+    border-top-style: solid;
+    border-color: #333;
+}
+#footer h4{font-family: 'Audiowide', cursive;}
+#footer div{margin-top: 15px;}
+#footer li{margin-top: 10px;}
+#footer ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+#footer a{
+    position: relative;
+    left: 0;
+    transition: 0.2s left ease-out;
+}
+#footer a:hover{left: 5px;}
+@media (min-width:770px) {
+    #container{
+        min-height: 80vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-title{font-size: 2.25rem;}
+    .header-nav{font-size: 1.15rem;}
+    #header ul{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    #header li{width: 100%;}
+    #header a{padding: 20px;}
+    #banner{grid-template-columns: repeat(auto-fit, minmax(190px,1fr));}
+    #section-info{
+        margin: auto ;
+        width: 90%;
+    }
+    .info{
+        padding: 30px;
+        font-size: 2rem;
+    }
+    .wsp{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    .wsp a{
+        height: auto;
+        border: none;
+        background: none;
+        color: #3ac43a;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        transition: 0.3s bottom ease-in-out;
+    }
+    .wsp a:hover{
+        bottom: 10px;
+        background: none;
+    }
+    #footer{font-size: 1.15rem;}
+    #footer h4{font-size: 2rem;}
+    #footer ul{
+        gap: 30px;
+    }
+}
+@media (min-width:1050px) {
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #header{
+        display: flex;
+        padding: 0 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-title{
+        font-size: 3rem;
+        padding: 0 10px;
+        border: none;
+    }
+    .header-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    #header a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 20px 0;
+    }
+    #section-info{
+        display: flex;
+        align-items: center;
+        margin: auto ;
+    }
+    .info-img{
+        display: inline;
+        width:500px;
+        height:380px;
+    }
+    .info{background: none;}
+    #footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: none;
+        font-size: 1.25rem;
+        padding: 30px 0;
+    }
+    #footer h4{font-size: 2.75rem;}
+    #footer div{margin: 0;}
+    #footer ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 20px;
+    }
+}

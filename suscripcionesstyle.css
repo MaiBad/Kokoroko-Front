@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{list-style: none;}
+body{
+    font-family: 'Hubballi', cursive;
+    background:linear-gradient(45deg,#333,#111);
+    font-size: 16px;
+    color: #eee;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: #eee;
+    width: 100%;
+}
+#header{
+    background-color: #f72626;
+    text-align: center;
+    padding: 10px 0;
+}
+.header-title{
+    font-family: 'Audiowide', cursive;
+    font-size: 2rem;
+    border-bottom-style: solid;
+    border-color:#d32020;
+}
+#header li{display: flex;}
+#header a{padding: 10px 0;}
+#header a:hover{background-color: #d32020;}
+#section-suscripcion{padding: 10px}
+.suscripciones{
+    background-color: #e74c4c;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.suscripcion{
+    color: #222;
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: space-between;
+}
+.suscripcion-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.info{display: flex;gap:20px}
+.categ{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.suscripcion-img{width: 200px;}
+.suscripcion-funciones{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:20px;
+}
+#footer{
+    position: sticky;
+    top:100vh;
+    background-color: #f72626;
+    text-align: center;
+    padding: 10px 0;
+    border-top-style: solid;
+    border-color: #333;
+}
+#footer h4{font-family: 'Audiowide', cursive;}
+#footer div{margin-top: 15px;}
+#footer li{margin-top: 10px;}
+#footer ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+#footer a{
+    position: relative;
+    left: 0;
+    transition: 0.2s left ease-out;
+}
+#footer a:hover{left: 5px;}
+@media (min-width:720px) {
+    #section-suscripcion{padding: 50px;}
+    .suscripciones{max-width: 1000px;margin: auto;}
+    .suscripcion{flex-direction: row;}
+    .suscripcion-info{flex-direction: row;}
+}
+@media (min-width:770px) {
+    .header-title{font-size: 2.25rem;}
+    .header-nav{font-size: 1.15rem;}
+    #header ul{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    #header li{width: 100%;}
+    #header a{padding: 20px;}
+    #footer{font-size: 1.15rem;}
+    #footer h4{font-size: 2rem;}
+    #footer ul{gap: 30px;}
+}
+@media (min-width:1050px) {
+    #header{
+        display: flex;
+        padding: 0 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-title{
+        font-size: 3rem;
+        padding: 0 10px;
+        border: none;
+    }
+    .header-nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    #header a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 20px 0;
+    }
+    .suscripcion-funciones{font-size: 40px;}
+    #footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: none;
+        font-size: 1.25rem;
+        padding: 30px 0;
+    }
+    #footer h4{font-size: 2.75rem;}
+    #footer div{margin: 0;}
+    #footer ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 20px;
+    }
+}

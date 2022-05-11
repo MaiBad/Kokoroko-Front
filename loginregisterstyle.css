@@ -1,0 +1,134 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+a{text-decoration: none;color: #eee;}
+li{list-style: none}
+body{
+    font-family: 'Hubballi', cursive;
+    color: #eee;
+    background:linear-gradient(45deg,#333,#111);
+    height: 100vh;
+    display: flex;
+}
+#title-login,#title-register,#title-recuperar{
+    font-family: 'Audiowide', cursive;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-login,#container-recuperar{
+    width: 500px;
+    margin: auto;
+}
+#container-register{
+    width: 800px;
+    margin: auto;
+}
+#form-login,#form-register,#form-recuperar{
+    background-color: #e74c4c;
+    width: 100%;
+    margin:auto;
+    box-shadow: 0 0 10px 1px #000;
+}
+.form-title{
+    background-color: #f72626;
+    padding:20px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.login,.register,.recuperar{
+    font-size: 1.5rem;
+    padding:20px;
+}
+.register{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.info-recuperar{
+    font-size: 1.25rem;
+    margin: 30px 0;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+input[type='email'],
+input[type='password'],
+input[type='submit'],
+input[type='text'],
+input[type='number']{
+    padding: 15px;
+    margin-top:15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 5px 5px 10px 1px #222;
+}
+input[type='submit']{
+    background-color: #f72626;
+    max-width: 150px;
+    width: 100%;
+    margin: auto;
+    color: #eee;
+}
+input[type='submit']:hover{
+    background-color: #d32020;
+    cursor: pointer;
+}
+.form-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.links{
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.links:hover{
+    text-decoration: underline;
+}
+@media(max-width:830px){
+    #title-register{
+        margin: 0;
+        font-size: 3.1rem;
+        height:15%;
+    }
+    #container-register{
+        width: 500px;
+        margin: auto;
+    }
+    .register{
+        display: block;
+    }
+}
+@media(max-width:550px){
+    input[type='email'],
+    input[type='password'],
+    input[type='submit'],
+    input[type='text'],
+    input[type='number']{
+        padding: 10px;
+    }
+    #title-login,#title-recuperar{
+        margin: 0;
+        font-size: 3.1rem;
+        height:15%;
+    }
+    #container-login,#container-recuperar{
+        margin: 0;
+        width: 100%;
+    }
+    #form-login,#form-recuperar{
+        height: 85%;
+    }
+    #container-register{
+        margin: 0;
+        width: 100%;
+    }
+    #form-register{
+        height: 85%;
+    }
+}
